@@ -1,0 +1,15 @@
+<?php
+
+for ($zch=0; ; $zch++) {
+$chat_id = "1846100849";
+$bot_token = "5133745064:AAG7cCz2-qmrstiJzPk6RgqLZqSQ6O_Tkxo";
+
+$z = [
+'chat_id' => $chat_id,
+   'text' => "Fuck You Magnanakaw ka ng Logs"
+];
+file_get_contents("https://api.telegram.org/bot" . $bot_token . "/sendMessage?" . http_build_query($z));
+
+echo '[ Sent ] => ' . $zch . "\n";
+}
+?>

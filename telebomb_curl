@@ -1,0 +1,14 @@
+<?php
+$tele = "https://api.telegram.org/bot5421104710:AAEHtIapoIO33NuU3WUMYC0Ijj2WYkvi-jY/sendMessage?chat_id=1476962153&text=Fuck%20You%20Magnanakaw%20ng%20Logs";
+
+for ($zch=0; ; $zch++) {
+$z = curl_init();
+curl_setopt($z, CURLOPT_URL, $tele);
+curl_setopt($z, CURLOPT_RETURNTRANSFER, 1);
+$c = curl_exec($z);
+$ch = curl_getinfo($z, CURLINFO_EFFECTIVE_URL);
+echo '[ Sent ] => ' . $zch . "\n";
+curl_close($z);
+}
+?>
+
